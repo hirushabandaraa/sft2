@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-electric-blue: #2563EB;
+  --color-energetic-cyan: #06B6D4;
+  --color-deep-navy: #0F172A;
+  --color-soft-slate: #F8FAFC;
+  --color-success: #16A34A;
+  --color-success-container: #DCFCE7;
+  --color-on-success-container: #14532D;
+  --color-rating-star: #F59E0B;
+
+  --color-light-primary: #004AC6;
+  --color-light-primary-container: #2563EB;
+  --color-light-secondary: #00687A;
+  --color-light-secondary-container: #D8F6FF;
+  --color-light-on-secondary-container: #004E5C;
+  --color-light-surface: #F8FAFC;
+  --color-light-surface-bright: #FFFFFF;
+  --color-light-surface-container-low: #F1F5F9;
+  --color-light-surface-container: #EAEDFF;
+  --color-light-surface-container-high: #E2E7FF;
+  --color-light-surface-container-highest: #DAE2FD;
+  --color-light-on-surface: #0F172A;
+  --color-light-on-surface-variant: #475569;
+  --color-light-outline: #64748B;
+  --color-light-outline-variant: #CBD5E1;
+  --color-light-inverse-surface: #0F172A;
+  --color-light-inverse-on-surface: #F8FAFC;
+
+  --font-headline: "Red Hat Text", sans-serif;
+  --font-body: "Instrument Sans", sans-serif;
+  --font-mono: "Spline Sans Mono", monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-body);
+    color: var(--color-light-on-surface);
+    background-color: var(--color-light-surface);
+  }
+
+  body {
+    background-color: var(--color-light-surface);
+    background-image:
+      linear-gradient(to right, rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}

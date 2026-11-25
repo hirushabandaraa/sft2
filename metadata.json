@@ -1,0 +1,6 @@
+{
+  "name": "Hirusha Bandara | A/L Science for Technology",
+  "description": "Sri Lanka's structured A/L Science for Technology learning ecosystem with Hirusha Bandara — conceptual theory mastery, timed past paper discussions, and weekly assessment tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
